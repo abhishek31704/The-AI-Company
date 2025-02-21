@@ -1,73 +1,95 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     background-color: #333;
-    color: white;
-    padding: 1rem;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-header nav ul {
+header h1 {
+    margin: 0;
+}
+
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0 10px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-#hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 5rem 1rem;
-}
-
-#services, #about, #contact {
-    padding: 2rem 1rem;
+section {
+    padding: 20px;
     text-align: center;
 }
 
-.service {
-    margin: 1rem 0;
-}
-
-#contact form {
+.beehive {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
-#contact form label, #contact form input, #contact form textarea {
-    width: 100%;
-    max-width: 500px;
-    margin: 0.5rem 0;
+.hexagon {
+    width: 100px;
+    height: 57.74px;
+    background-color: #000;
+    color: #FFD700;
+    margin: 28.87px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #FFD700;
 }
 
-#contact form button {
-    padding: 0.5rem 2rem;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 28.87px solid #000;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 28.87px solid #000;
+}
+
+.hexagon img {
+    width: 50px;
+    height: 50px;
 }
 
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
