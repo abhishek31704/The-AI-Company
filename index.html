@@ -18,10 +18,24 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Transform Your Business with AI</h2>
-        <p>Leading AI solutions for sales and marketing lead generation</p>
-        <button onclick="document.location.href='#contact'">Get Started</button>
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Transform Your Business with AI</h2>
+            <p>Leading AI solutions for sales and marketing lead generation</p>
+            <button onclick="document.location.href='#contact'">Get Started</button>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="contact_form.php" method="post" class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
     <section id="beehive">
         <h2>Our Products and Services</h2>
@@ -49,18 +63,6 @@
     <section id="about">
         <h2>About Us</h2>
         <p>We are a leading AI company specializing in sales and marketing solutions.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="contact_form.php" method="post" class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
     </section>
     <footer>
         <p>&copy; 2025 AI Company. All rights reserved.</p>
